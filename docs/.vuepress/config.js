@@ -5,6 +5,7 @@ module.exports = {
   title: 'tom.zhao',
   description: '个人练习记录',
   base: '/blog/',
+  serviceWorker: true,
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -13,7 +14,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Javascript', link: '/javascript/es6' },
+      { text: 'Javascript', link: '/javascript/数组' },
       { text: 'Css', link: '/css/css1' },
       { text: 'github', link: 'https://github.com/hello-zhao' },
     ],
