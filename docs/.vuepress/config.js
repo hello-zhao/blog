@@ -25,7 +25,8 @@ module.exports = {
   },
   dest: path.resolve('dist'),
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    toc: { includeLevel: [1, 2, 3], },
   },
   evergreen: true,
 }

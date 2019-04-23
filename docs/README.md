@@ -1,14 +1,14 @@
 ---
 home: true
 # heroImage: /hero.png
-heroText: 个人博客
+heroText: 个人笔记
 tagline: 记录从业点滴回顾
 # actionText: 快速上手 →
 # actionLink: /zh/guide/
 features:
-- title: 博客地址
+- title: 访问地址
   details:
-- title: 博客使用vuepress搭建
+- title: 笔记使用vuepress搭建
   details:
 footer: MIT Licensed | Copyright © 2019-present tom.zhao
 ---
