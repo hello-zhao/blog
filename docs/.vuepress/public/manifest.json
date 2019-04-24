@@ -1,0 +1,19 @@
+{
+  "name": "tom个人笔记",
+  "short_name": "tom个人笔记",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8f8f8",
+  "description": "tom个人笔记",
+  "icons": [{
+    "src": "./logo.jpg",
+    "sizes": "144X144",
+    "type": "image/jpg"
+  }],
+  "related_applications": [{
+    "platform": "web"
+  }, {
+    "platform": "play",
+    "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
+  }]
+}

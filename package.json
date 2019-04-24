@@ -2,7 +2,7 @@
   "scripts": {
     "start": "vuepress dev docs",
     "build": "vuepress build docs",
-    "deploy": "npm run build && gh-pages -d dist"
+    "pkg:prod": "npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",

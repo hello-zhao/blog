@@ -2,26 +2,44 @@ const path = require('path');
 const javascriptMenu = require('../javascript/router');
 
 module.exports = {
-  title: 'tom.zhao',
-  description: '个人练习记录',
+  title: 'Tom',
+  description: 'hello world',
   base: '/blog/',
   serviceWorker: true,
+  anchor: 'tom.zhao',
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@assets': '/docs/public/assets'
+      }
+    }
+  },
   locales: {
     '/': {
       lang: 'zh-CN',
     }
   },
   themeConfig: {
+    repo: 'hello-zhao/blog',
+    docsDir: 'docs',
+    // 假如文档放在一个特定的分支下：
+    docsBranch: 'master',
+    editLinks: true,
+    // 默认为 "Edit this page"
+    editLinkText: '有问题？戳我！！！',
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Javascript', link: '/javascript/数组' },
       { text: 'Css', link: '/css/css1' },
-      { text: 'github', link: 'https://github.com/hello-zhao' },
     ],
     sidebar: {
       '/javascript/': javascriptMenu,
+      '/resume/': '',
     },
-    lastUpdated: '上次更新',
+    // lastUpdated: '上次更新',
+    serviceWorker: {
+      updatePopup: true,
+    }
   },
   dest: path.resolve('dist'),
   markdown: {
