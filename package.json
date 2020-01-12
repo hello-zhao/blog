@@ -1,7 +1,7 @@
 {
-  "name": "vue-analysis",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "analysis vue.js deeply",
+  "description": "tom blog",
   "directories": {
     "doc": "doc"
   },
