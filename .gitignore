@@ -1,3 +1,5 @@
-dist
-demo.html
+.idea/
 node_modules
+dist
+example/
+.DS_Store
