@@ -24,18 +24,38 @@ module.exports = {
     nav: [
       {
         text: 'javascript',
-        link: '/javascript/compile'
+        link: '/javascript/'
       },
     ],
     sidebar: {
+      '/javascript/': [
+        {
+          title: 'javascript',
+          collapsable: false,
+          children: [
+            ['/javascript/', 'Introduction'],
+            '拖拽',
+            '堆-栈-事件循环-宏微任务',
+            '防抖-节流',
+            '构造函数原型继承',
+            '数组',
+            'call-apply-bind',
+            'LHS和RHS查询',
+            'iterator',
+            'new',
+            'repaint-reflow',
+            '解析url过程',
+            'web-rtc'
+          ]
+        },
+      ],
       '/设计模式/': [
         {
           title: '准备工作',
           collapsable: false,
           children: [
             ['/设计模式/', 'Introduction'],
-            'test1',
-            'test2',
+            '策略模式',
           ]
         },
       ],
