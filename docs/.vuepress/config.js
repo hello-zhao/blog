@@ -26,6 +26,10 @@ module.exports = {
         text: 'javascript',
         link: '/javascript/'
       },
+      {
+        text: 'jquery',
+        link: '/jquery/'
+      },
     ],
     sidebar: {
       '/javascript/': [
@@ -45,7 +49,18 @@ module.exports = {
             'new',
             'repaint-reflow',
             '解析url过程',
-            'web-rtc'
+            'web-rtc',
+            '代码插桩',
+          ]
+        },
+      ],
+      '/jquery/': [
+        {
+          title: 'jquery',
+          collapsable: false,
+          children: [
+            ['/jquery/', 'Introduction'],
+            'init',
           ]
         },
       ],
