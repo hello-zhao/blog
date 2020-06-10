@@ -4,6 +4,7 @@ module.exports = {
   title: 'Vue.js 技术揭秘',
   description: 'Analysis vue.js deeply',
   head: [
+    ['script', { src: 'https://cdn.bootcss.com/jquery/2.0.3/jquery.js' }],
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -61,6 +62,9 @@ module.exports = {
           children: [
             ['/jquery/', 'Introduction'],
             'init',
+            `选中dom元素修改样式`,
+            'jquery实例方法',
+            'extend',
           ]
         },
       ],
