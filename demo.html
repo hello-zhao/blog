@@ -3,36 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
 <body>
-<table>
-  	Android	ios	已review	owner	模块	page	page_name	页面注释	action	block block_name	explanation	event	event_name	explanation	position(从1开始)	data	explanation
 
-  <thead>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </thead>
-</table>
 </body>
 </html>
+
+<script>
+
+const getQuery = function(key) {
+  if (!location.search) return null
+  const reg = new RegExp(`(^|&)${key}=([^&]*)(&|$)`)
+  const res = reg.exec(location.search.slice(1))
+  return res ? res[2] || null : null
+}
+</script>
