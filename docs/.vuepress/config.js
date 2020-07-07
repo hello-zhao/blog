@@ -31,6 +31,10 @@ module.exports = {
         text: 'jquery',
         link: '/jquery/'
       },
+      {
+        text: '设计模式',
+        link: '/设计模式/'
+      },
     ],
     sidebar: {
       '/javascript/': [
@@ -75,6 +79,7 @@ module.exports = {
           children: [
             ['/设计模式/', 'Introduction'],
             '策略模式',
+            '实现axios拦截器机制',
           ]
         },
       ],
