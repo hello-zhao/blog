@@ -12,10 +12,6 @@
 
 <script>
 
-const getQuery = function(key) {
-  if (!location.search) return null
-  const reg = new RegExp(`(^|&)${key}=([^&]*)(&|$)`)
-  const res = reg.exec(location.search.slice(1))
-  return res ? res[2] || null : null
-}
+
+
 </script>
