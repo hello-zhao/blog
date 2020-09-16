@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+class Node {
+  constructor(element) {
+    this.element = element
+    this.next = null
+  }
+}
+
+
+const head = new Node(1);
+head.next = new Node(2);
+head.next.next = new Node(3);
+
+
+var reversePrint = function(head) {
+  debugger
+  if (head === null || head.next === null) return head
+  const prev = reversePrint(head.next)
+  head.next.next = head
+  head.next = null
+  return prev
+};
+
+console.log(reversePrint(head))
+
+
+</script>
