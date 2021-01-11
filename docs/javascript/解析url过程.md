@@ -29,8 +29,10 @@
 ## 浏览器渲染页面
 1. 浏览器通过 HTMLParser 根据深度遍历的原则把 HTML 解析成 DOM Tree。
 2. 浏览器通过 CSSParser 将 CSS 解析成 CSS Rule Tree（CSSOM Tree）。
+3. Dom 解析 和 Css解析并行处理，CSS加载不会阻塞DOM的解析
 3. 浏览器将 JavaScript 通过 DOM API 或者 CSSOM API 将 JS 代码解析并应用到布局中，按要求呈现响应的结果。
 4. 根据 DOM 树和 CSSOM 树来构造 render Tree。
+5. Render Tree是依赖于DOM Tree和CSSOM Tree的，Css加载是会阻塞Dom的渲染的
 5. layout：重排（也可以叫回流），当 render tree 中任一节点的几何尺寸发生改变，render tree 就会重新布局，重新来计算所有节点在屏幕的位置。
 6. repaint：重绘，当 render tree 中任一元素样式属性（几何尺寸没改变）发生改变时，render tree 都会重新画，比如字体颜色，背景等变化。
 7. paint：遍历 render tree，并调动硬件图形 API 来绘制每个节点。
